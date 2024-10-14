@@ -23,7 +23,7 @@ body{
 
 .navbar {
   background-color: rgba(213, 69, 169, 0.80);
-  padding: 10px 20px;
+  padding: 20px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ body{
 }
 
 .content {
-  padding-top: 40px;
+  padding-top: 62px;
 }
 
 .hero {
@@ -123,8 +123,10 @@ body{
   padding: 30px;
   margin: 0 auto; 
   max-width: 800px; 
-  width: 100%; 
+  width: 100vw; 
   text-align: center;
+  /* background-color: rgba(213, 69, 169, 0.80);
+  color: rgb(245, 245, 245); */
 }
 
 @media (min-width: 768px) {
@@ -133,10 +135,11 @@ body{
   }
 }
 
-
 .offerings {
   padding: 40px;
   text-align: center;
+  background-color: rgba(213, 69, 169, 0.80);
+  color: rgb(245, 245, 245);
 }
 
 .offerings-flex {
@@ -189,6 +192,51 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  height: 85vh; 
+  width: 100%;
+  background-image: url('../public/images/o-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 40px;
+  z-index: 2; 
+}
+
+.about-text {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  gap: 10px;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 
