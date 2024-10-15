@@ -8,7 +8,11 @@ export default function Gallery() {
     { src: "/images/o-12.jpg", alt: "Guava Brigideiro" },
     { src: "/images/o-13.jpg", alt: "Chocolate Brigideiro" },
     { src: "/images/o-14.jpg", alt: "Cake" },
-    { src: "/images/o-15.jpg", alt: "Cake" },
+    { src: "/images/o-2.jpg", alt: "Cake" },
+    { src: "/images/o-4.jpg", alt: "Cake" },
+    { src: "/images/o-6.jpg", alt: "Belgian Waffle" },
+    { src: "/images/o-7.jpg", alt: "Chocolate Cone" },
+    { src: "/images/o-8.jpg", alt: "Cupcake" },
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -23,7 +27,7 @@ export default function Gallery() {
 
   return (
     <div className="gallery">
-      <h2>Our Gallery</h2>
+      <h2>Gallery</h2>
       <div className="gallery-grid">
         {images.map((image, index) => (
           <div key={index} className="gallery-image-container">
