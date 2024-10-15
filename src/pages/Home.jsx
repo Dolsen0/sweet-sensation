@@ -9,19 +9,10 @@ export default function Home() {
   return (
     <div className="home">
       <Hero />
-
       <Welcome className="fade-in" />
       <Offerings className="fade-in" />
-
-      {/* 
-      <Welcome />
-
-      <Offerings /> */}
-
       <Testimonial />
-
       <Location />
-
       <Hours />
     </div>
   );
